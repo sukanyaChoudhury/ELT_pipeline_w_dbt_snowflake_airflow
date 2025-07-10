@@ -18,7 +18,7 @@ This project demonstrates a complete modular ELT (Extract, Load, Transform) data
 ---
 
 ## 🧭 Architecture Diagram
-<img width="1000" height="800" alt="ELT Pipeline Architecture" src="https://github.com/user-attachments/assets/850643bf-c0fc-4e8f-a9da-1f4b14a0b78b" />
+<img width="500" height="400" alt="ELT Pipeline Architecture" src="https://github.com/user-attachments/assets/850643bf-c0fc-4e8f-a9da-1f4b14a0b78b" />
 
 ## ⚙️ Pre-requisites
 -  Snowflake account & credentials with correct roles
