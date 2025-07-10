@@ -28,4 +28,9 @@ This project demonstrates a complete modular ELT (Extract, Load, Transform) data
 
 -----------------
 ## Implementation:
-## Step 1: 
+## Step 1: Setup snowflake environment
+Setup the snowflake environment as per the instructions text doc.
+## Step 2: Create and activate virtual env venv and then use it to install dbt
+Follow instructions in the instructions text document to create and activate a virtual env. Then install dbt
+## Step 3: Initialize a dbt project
+follow instructions to create and initialize a dbt project. In our example, we are using dbt_first project.
