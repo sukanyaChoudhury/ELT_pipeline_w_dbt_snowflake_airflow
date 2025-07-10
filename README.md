@@ -18,3 +18,5 @@ This project demonstrates a complete modular ELT (Extract, Load, Transform) data
 ---
 
 ## 🧭 Architecture Diagram
+<img width="1536" height="1024" alt="ELT Pipeline Architecture" src="https://github.com/user-attachments/assets/850643bf-c0fc-4e8f-a9da-1f4b14a0b78b" />
+
