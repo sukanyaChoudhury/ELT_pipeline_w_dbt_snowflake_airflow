@@ -66,12 +66,19 @@ All these components can be run using dbt run command or select command which ru
 - Update docker file and requirements.txt inside dbt-dag to get cosmos.
 - Copy the dbt project folder dbt/dbt_first into the dbt-dag/dags folder.
 - Start docker engine and then run astro dev start which creates the required images and runs the airflow webserver container as well.
-- Once the webserver is up, login to airflow and then add the snowflake connection details
-- For deploying our dbt project, we need to create a dbt_dag.py file containing the snowflake connection(created above), project config, scheduling details etc.
+- Once the webserver is up, login to airflow and then add the snowflake connection details as snowflake_conn under Admin--> Connections
+- For deploying our dbt project, we need to create a dbt_dag.py file with snowflake_conn, project config, scheduling details etc.
 - After this, we can see our dbt_dag deployed inside airflow webserver.
+  <img width="952" height="227" alt="image" src="https://github.com/user-attachments/assets/03132338-5700-455b-bfe6-367e9aa299fd" />
+
 ### Step 12: Run the dbt_dag pipeline
 Manually run the pipeline and check logs . It should be able to run successfully and fetch the raw snowflake sammple data and create our various staging views and fact tables etc.
 <img width="940" height="386" alt="image" src="https://github.com/user-attachments/assets/ec321063-ef8c-49bf-83dc-0ebb90556f08" />
+
+## Step 13: Snowflake verification
+All tables and views are created in snowflake as in the pipeline:
+<img width="931" height="398" alt="image" src="https://github.com/user-attachments/assets/3efa2c33-b2c5-4b36-b9cb-3e1d11a6c5a8" />
+
 
 
 
