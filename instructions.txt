@@ -50,9 +50,33 @@ mkdir %userprofile%\.dbt
 #initiate dbt project 
 dbt init <projectname>
 
---Step 8: Install Astro CLI
+--Step 8 : Run packages.yml file
+dbt deps
+
+--Step 9: Run all models/individual models
+dbt run/dbt run -s stg_tpch_line_items 
+
+Step 10: Run all generic and singular tests
+dbt test
+
+--Step 11: Install Astro CLI
 winget install Astronomer.Astro
 
-mkdir dbt-dag inside the project folder
+mkdir dbt-dag inside the root folder
 
 astro dev init after cd dbt-dag
+
+-- Deploy to airflow
+After Docker file and requirements.txt inside dbt-dag are updated, run astro dev start to start the airflow containers including webserver.
+add connection details , snowflake_conn under Admin-->Connections 
+{
+  "account": "LCABSOE-EV20950",
+  "warehouse": "dbt_wh",
+  "database": "dbt_db",
+  "role": "dbt_role",
+  "insecure_mode": false
+}
+
+create the dbt_dag.py file and run it to see the output logs.
+
+
